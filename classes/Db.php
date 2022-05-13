@@ -6,13 +6,13 @@ abstract class DB{
     public static function getConnection(){
         if( self::$conn !== null ){
             
-            echo "conncted";
+            //echo "conncted";
             return self::$conn;
     
         } 
         else{
           
-            echo"not";
+           // echo"not";
             self::$conn = new PDO ("mysql:host=localhost;dbname=ducktalk", "root", "root");
             return self:: $conn;
         }
