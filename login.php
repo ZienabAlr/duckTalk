@@ -13,6 +13,8 @@
     <header>
     <nav>
        <img src="images/logo.png" alt="logo">
+       <a href="login.php">Login</a>
+       <a class="activeBtn" href="signup.php">Sign Up</a>
     </nav>
 
     </header>
