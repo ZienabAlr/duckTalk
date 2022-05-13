@@ -16,9 +16,11 @@
 <body>
     <header>
     <nav>
-       <img src="images/logo.png" alt="logo">
-       <a href="login.php">Login</a>
-       <a class="activeBtn" href="signup.php">Sign Up</a>
+       <a  class ="logo" href="#"><img src="images/logo.png" alt="logo"></a>
+       <div class="loginSign">
+            <a class="notActiv font" href="login.php">Login</a>
+            <a class="activeBtn font " href="signup.php">Sign Up</a>
+        </div>    
     </nav>
     </header>
 

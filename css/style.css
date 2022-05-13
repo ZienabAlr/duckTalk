@@ -1,5 +1,35 @@
 @import url(//db.onlinewebfonts.com/c/1f18a828748b3090f287def14b600d51?family=Kohinoor);
 
+nav{
+    background-color: white;
+}
+.logo img{
+    width: 200px;
+    padding: 3em ;
+}
+
+.loginSign{
+    display: inline;
+    float: right;
+    margin: 4em 3em;
+}
+
+.loginSign a{
+    text-decoration: none;
+    padding:15px 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.loginSign .notActiv{
+    border: #2eaa4d solid 2px;
+}
+
+.loginSign .activeBtn{
+    background-color: #440DCC;
+    color: white;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -99,7 +129,7 @@ body {
     border: none;
     display: inline;
     margin: 0 5px;
-    /* background-color: purple; */
+    /* background-color: none; */
     /* border:  1px #440DCC solid; */
     color: white;
     border-radius: 6px;
