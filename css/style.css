@@ -7,8 +7,7 @@ body {
     background: rgb(68,23,204);
     background: linear-gradient(344deg, rgba(68,23,204,0.8884147408963585) 0%, rgba(238,88,16,0.8323923319327731) 100%);
     background-repeat: no-repeat;
-    height: 990px;
-    /* font-family: "lato", sans-serif; */
+    background-size: cover;
 }
   
 #signupForm {
@@ -20,72 +19,88 @@ body {
   
 .form {
     background-color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
     width: 400px;
     border-radius: 8px;
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
-  }
+}
   
-  .title {
+.title {
     font-size: 50px;
     margin-bottom: 50px;
     font-family: "Kohinoor";
-  }
+    text-align: center;
+    color: #440DCC;
+}
   
-  #inputContainer {
+#inputContainer {
     position: relative;
     height: 45px;
     width: 90%;
     margin-bottom: 17px;
-  }
+}
   
   
-  .warning p {
+.warning p {
     color: red;
-  }
+}
   
   
-  #inputContainer .login{
+#inputContainer .login{
     text-align: right;
-  }
+    font-size: 13px;
+}
   
-  .input {
+.input {
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    border: 1px solid #dadce0;
-    border-radius: 7px;
+    border-bottom: 1px solid #dadce0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     font-size: 16px;
     padding: 0 20px;
-    outline: none;
     background: none;
     z-index: 1;
-  }
+}
   
-  .label {
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.label {
     position: absolute;
     top: 15px;
     left: 15px;
     padding: 0 4px;
-    background-color: white;
     color: #dadce0;
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
-  }
+}
   
   ::placeholder {
     color: transparent;
+  }
+
+  .buttons{
+
+    padding: 0 75px 30px 75px;
   }
   
   #submitBtn {
     display: block;
     margin-left: auto;
-    padding: 15px 30px;
+    padding:15px 35px;
     border: none;
-    background-color: purple;
+    display: inline;
+    margin: 0 5px;
+    /* background-color: purple; */
+    /* border:  1px #440DCC solid; */
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -93,8 +108,13 @@ body {
     margin-top: 30px;
   }
   
+  .actBtn{
+      background-color: #2eaa4d;
+      border: 0;
+  }
+
   #submitBtn:hover {
-    background-color: #9867c5;
+    background-color: #69ec8a;
   }
   .input:focus + .label {
     top: -7px;
@@ -102,7 +122,7 @@ body {
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-    color: purple;
+    color: white;
   }
   
   .input:not(:placeholder-shown) + .label {
@@ -113,9 +133,9 @@ body {
     font-weight: 600;
   }
   
-  .input:focus {
+  /*.input:focus {
     border: 2px solid purple;
-  }
+  }*/
   
   #noAccount h4{
     text-align: center;

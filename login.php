@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DuckTalk</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,27 +41,24 @@
 
                 <div id="inputContainer">
                     <input type="text" class="input" placeholder="Enter your school email adress" name="email" required="">
-                    <label for="" class="label">Email</label>
+                    <label for="" class="label font">Email</label>
                 </div>
 
                 <div id="inputContainer">
                     <input type="text" class="input" placeholder="a" name= "password">
-                    <label for="" class="label">Password</label>
+                    <label for="" class="label font">Password</label>
                 </div>
 
                 <div id="inputContainer">
                     <!-- <h4>Already have an account? -->
-                        <a href="reset-password.php" class="login">Forgot your password?</a></h4>
+                        <a href="reset-password.php" class="login font">Forgot your password?</a></h4>
                 </div>
 
+                <div class="buttons">
 
-                <input type="submit" id="submitBtn" value="Login">
-                <input type="submit" id="submitBtn" value="Beck">
+                    <input type="submit" id="submitBtn" class="font" value="Back">
+                    <input type="submit" id="submitBtn" class="font actBtn" value="Login">
 
-                <div id= "noAccount">
-                  <h4>Don't have an account? <a href="signup.php">Sign up</a></h4>
-
-                  <!-- <input type="submit" id="submitBtn" value="Signup"> -->
                 </div>
             </form>
         </div>
