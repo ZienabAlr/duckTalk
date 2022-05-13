@@ -3,7 +3,7 @@ include_once("bootstrap.php");
  
 
 if(!empty($_POST)){
-
+    $conn=DB::getConnection();
         $user= new Student(); 
         $email= $user->setEmail($_POST["email"]); 
         $password= $user->setPassword($_POST["password"]); 
