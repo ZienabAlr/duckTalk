@@ -1,5 +1,30 @@
 <?php
+include_once("bootstrap.php");
+ 
 
+if(!empty($_POST)){
+
+        $user= new Student(); 
+        $email= $user->setEmail($_POST["email"]); 
+        $password= $user->setPassword($_POST["password"]); 
+
+        if(!empty($email) && !empty($password)){
+            
+            if($user->can_login()){
+           
+                session_start();
+                $_SESSION['user'] = $auth;
+                header('location:index.php');
+                die ();
+                 
+            }
+            else{
+
+                $error = true; 
+            }
+               
+        }  
+}
 
 ?><!DOCTYPE html>
 <html lang="en">
