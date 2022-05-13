@@ -81,7 +81,7 @@
                     <div class="buttons">
 
                         <input type="submit" id="submitBtn" class="font" value="Back">
-                        <input type="submit" id="submitBtn" class="font actBtn" value="Login">
+                        <input type="submit" id="submitBtn" class="font actBtn" value="Sign up">
 
                     </div>
                 </form>
