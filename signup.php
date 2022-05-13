@@ -75,7 +75,11 @@
 
                     <div id="inputContainer">
                         <!-- <h4>Already have an account? -->
-                        <a href="reset-password.php" class="login font">Forgot your password?</a></h4>
+                        <!--<a href="reset-password.php" class="login font">Forgot your password?</a></h4>-->
+
+                        <a href="login.php" class="login font">
+                            <h4>Already have an account?
+                        </a></h4>
                     </div>
 
                     <div class="buttons">
