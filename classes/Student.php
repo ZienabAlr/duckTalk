@@ -7,7 +7,7 @@ class Student extends User{
      public function can_signup(){
         try{
             $conn=DB::getConnection();
-                $statement = $conn->prepare ("INSERT INTO test (username, email, password) VALUES (:username, :email, :password)");
+                $statement = $conn->prepare ("INSERT INTO student-tl (username, email, password) VALUES (:username, :email, :password)");
                 $statement->bindValue("username", $this->username);
                 $statement->bindValue("email", $this->email);
                 $options=[
@@ -30,8 +30,8 @@ class Student extends User{
 
     public function can_login(){
 
-        $conn = new PDO ("mysql:host=localhost;dbname=OOP", "root", "root");
-        $statement = $conn->prepare("SELECT * FROM test WHERE email= :email");
+        $conn=DB::getConnection();
+        $statement = $conn->prepare("SELECT * FROM student-tl WHERE email= :email");
         $statement->bindValue("email", $this->email);
         $statement->execute();
         $user= $statement->fetch(PDO::FETCH_ASSOC);
