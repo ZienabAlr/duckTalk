@@ -6,7 +6,7 @@ class Student extends User{
 
      public function can_signup(){
         try{
-                $conn = new PDO ("mysql:host=localhost;dbname=OOP", "root", "root");
+            $conn=DB::getConnection();
                 $statement = $conn->prepare ("INSERT INTO test (username, email, password) VALUES (:username, :email, :password)");
                 $statement->bindValue("username", $this->username);
                 $statement->bindValue("email", $this->email);
