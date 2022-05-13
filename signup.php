@@ -1,5 +1,49 @@
 <?php
 
+include_once("bootstrap.php");
+
+function validateEmail($email)
+{
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        return false;
+    } else {
+        if (empty(preg_match("/@student.thomasmore.be|thomasmore.be$/", $email))) {
+            return false;
+        } else {
+            //valid//
+            return true;
+        }
+    }
+}
+
+
+
+
+if (!empty($_POST)) {
+    if (validateEmail($_POST["email"])) {
+        try {
+
+            $user = new Student();
+            $user->setFirstname($_POST["firstname"]);
+            $user->setLastname($_POST["lastname"]);
+            $user->setEmail($_POST["email"]);
+            $user->setPassword($_POST["password"]);
+
+            $user->can_signup($_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"]);
+
+
+            session_start();
+            $_SESSION['user'] = $_POST["email"];
+            header('location:index.php');
+            die();
+        } catch (Throwable $e) {
+
+            $error = $e->getMessage();
+        }
+    } else {
+        $error = "Email is not valid";
+    }
+}
 
 ?>
 <!DOCTYPE html>
