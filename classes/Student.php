@@ -16,8 +16,8 @@ class Student extends User
             $options = [
                 'cost' => 12,
             ];
-            $hash = password_hash($this->password, PASSWORD_DEFAULT,  $options);
-            $statement->bindValue("password", $password);
+            $hash = password_hash($password, PASSWORD_DEFAULT,  $options);
+            $statement->bindValue("password", $hash);
             return  $statement->execute();
         } catch (Throwable $e) {
 
