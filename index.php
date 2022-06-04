@@ -17,6 +17,20 @@
 		<?php include_once("inc/nav.inc.php"); ?>
 
 	</header>	
+
+    <section>
+
+        <div>
+            <form method="post" action="" enctype='multipart/form-data'>
+
+                <div>
+                    <input type="text"  class="input" name ="askQuestion" placeholder="What is your question? " value="">
+                </div>
+
+            </form>
+        </div>
+
+    </section>
 	
 </body>
 </html>
