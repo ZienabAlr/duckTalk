@@ -23,8 +23,9 @@
         <div>
             <form method="post" action="" enctype='multipart/form-data'>
 
-                <div>
-                    <input type="text"  class="input" name ="askQuestion" placeholder="What is your question? " value="">
+                <div class="post">
+                    <input type="text"  class="input" name ="askQuestion" placeholder="What is your question?" value="">
+                    <!-- <label for="" class="label font">What is your question?</label> -->
                 </div>
 
             </form>
