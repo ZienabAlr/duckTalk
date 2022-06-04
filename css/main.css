@@ -1,0 +1,31 @@
+body{
+
+    background: rgb(68,23,204);
+    background: linear-gradient(308deg, rgba(68,23,204,0.8048780487804879) 0%, rgba(105,37,163,0.8807588075880759) 30%, rgba(68,13,204,1) 100%);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height:max-content; */
+}
+
+.navbar{
+
+    background-color: white; 
+    /* box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2); */
+    margin: -0.5%;
+    /* background-size: cover; */
+}
+
+.logo img{
+
+    /* width: 15%; */
+    width: 170px;
+    margin: 2% 2% 0 2% ;
+}
+
+.profile img{
+    
+    /* width: 4%; */
+    width: 50px;
+    float: right;
+    margin: 1% 2% 0 2% ;
+}
