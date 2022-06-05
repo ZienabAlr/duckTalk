@@ -44,9 +44,8 @@ body{
 }
 
 .border-bottom{
-
-   border-bottom:1px solid #dadce0 ;
-   /* padding: 0 -20%; */
+   
+    border-bottom:1px solid #dadce0 ;
   
 }
 
@@ -54,7 +53,6 @@ body{
 
     background-color:transparent;
     border: 0px;
-    /* padding: 0 10%; */
    
 }
 
