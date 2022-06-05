@@ -29,15 +29,15 @@
                     <input type="text" class="input wider-input" name="explain" placeholder="Write what you think..." value="">
 				    <input type="file" class="input" name ="file" value="" multiple="" >-->
 						
-                    <div>
+                    <div class="inputveld">
                         <input type="text" class="input" name="ask" placeholder="Title" value="">
                     </div>
 
-                    <div>
+                    <div class="inputveld ">
                         <input type="text" class="input" name="" placeholder="Description" id="">
                     </div>
 
-                    <div>
+                    <div class="inputveld">
                         <input type="file" class="input" name="file" value="" multiple="">
                     </div>
                     <!-- <label for="" class="label font">What is your question?</label> -->
