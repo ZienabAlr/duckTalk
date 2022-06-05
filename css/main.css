@@ -38,16 +38,29 @@ body{
   
 }
 
+.post{
+
+    padding: 10%;
+}
+
 .border-bottom{
 
-   border-bottom:1px solid #dadce0 ; 
+   border-bottom:1px solid #dadce0 ;
+   /* padding: 0 -20%; */
+  
 }
 
 .inputveld .input{
 
     background-color:transparent;
     border: 0px;
+    /* padding: 0 10%; */
    
+}
+
+.inputveld{
+
+    padding: 10% ; 
 }
 
 .input:focus{

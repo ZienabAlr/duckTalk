@@ -29,7 +29,7 @@
                         <input type="text" class="input" name="ask" placeholder="Title" value="">
                     </div>
 
-                    <div class="inputveld border-bottom">
+                    <div class="inputveld border-bottom wider">
                         <input type="text" class="input" name="" placeholder="Set description..." id="">
                     </div>
 
