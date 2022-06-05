@@ -32,22 +32,29 @@ body{
 
 .post{
 
-   margin: 50px 32%;
+   /* margin: 50px 32%; */
+   margin: 40px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .post .input{
 
-    /* height: 150px; */
-    /* width: 300px; */
-
-    /* margin: 20px; */
     color: white;
     /* background-color:transparent; */
     background-color: rgba(255, 255, 255, 0.432);
-    padding: 7.5% 32%;
+    padding: 3.5% 14%;
     backdrop-filter: blur(8px);
+    border-radius: 25px;
     border: 0px;
+   
 
+}
+
+.input:focus{
+
+    outline: none;
 }
 
 ::placeholder {

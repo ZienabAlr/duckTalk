@@ -70,6 +70,7 @@ body {
     height: 45px;
     width: 90%;
     margin-bottom: 17px;
+    border-bottom: 1px solid #dadce0;
 }
   
   
@@ -83,20 +84,26 @@ body {
     font-size: 13px;
 }
   
-.input {
+#inputContainer .input {
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    border-bottom: 1px solid #dadce0;
+    border:0px;
+    /*border-bottom: 1px solid #dadce0;
     border-top: 0;
     border-left: 0;
-    border-right: 0;
+    border-right: 0;*/
     font-size: 16px;
     padding: 0 20px;
-    background: none;
+    background-color:transparent ;
     z-index: 1;
+}
+
+#inputContainer .input:focus{
+
+  outline: none;
 }
   
 .font{
