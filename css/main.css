@@ -30,28 +30,48 @@ body{
     margin: 1% 2% 0 2% ;
 }
 
-.post{
+.postform{
 
    /* margin: 50px 32%; */
-   margin: 40px 0;
+   margin: 40px 18%;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   padding: 3.5% 14%;
+   background-color: rgba(255, 255, 255, 0.432);
+  
+   backdrop-filter: blur(8px);
+   border-radius: 25px;
+   border: 0px;
+   /* padding: 3.5% 14%; */
 }
 
-.post .input{
+/*.post{
+
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 3.5% 20%; 
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: 0px;
+}*/
+
+.post div{
+
+    display: block;
+}
+
+/* .post .input{
 
     color: white;
     /* background-color:transparent; */
-    background-color: rgba(255, 255, 255, 0.432);
+    /*background-color: rgba(255, 255, 255, 0.432);
     /* padding: 3.5% 14%; */
-    backdrop-filter: blur(8px);
+    /*backdrop-filter: blur(8px);
     border-radius: 25px;
     border: 0px;
    
 
-}
+}*/
 
 .input:focus{
 
