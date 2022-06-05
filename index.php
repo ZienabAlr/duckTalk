@@ -1,6 +1,41 @@
 <?php
 
 
+include_once("bootstrap.php");
+$conn = Db::getConnection();
+
+if(isset($_POST['submit'])){
+
+	$post= new Post(); 
+        
+	$title= $post->setTitle($_POST["title"]);
+	$description= $post->setDescription($_POST["explain"]);
+	//upload een afbeelding/document
+	
+	$img_name= $_FILES['file']['name'];
+	$tmp_name= $_FILES['file'][ 'tmp_name'];
+	$img_size=$_FILES['file']['size'];
+
+	if($img_size > 5000000){
+
+		$message= "Sorry, your file is too large.";
+	}else{
+		$upload_dir='uploads/';
+		$imgExt=strtolower(pathinfo($img_name,PATHINFO_EXTENSION));
+		// echo($imgExt);
+
+		$valid_extensions= ['jpeg', 'jpg', 'png', 'gif', 'pdf'];
+		$picProfile=rand(1000,1000000).".".$imgExt;
+		move_uploaded_file($tmp_name,$upload_dir.$picProfile);
+		$image= $post->setImage($picProfile);
+		$post->create_post();
+	}
+
+
+}
+$posts = Post::show_post();
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +71,10 @@
                     <div class="inputveld">
                         <input type="file" class="input" name="file" value="" multiple="">
                     </div>
+                    
+                    <div class="sbmt-btn">
+					    <input type="submit" id="submitBtn" class="font actBtn" name="submit" value="Post">
+				    </div>
 
                 </div>
 
