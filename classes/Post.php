@@ -2,6 +2,7 @@
 
 
 class Post {
+
     private $title;
 private $description; 
 private $image; 

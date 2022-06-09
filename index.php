@@ -52,34 +52,67 @@ $posts = Post::show_post();
 
 	</header>	
 
-    <section>
+    <section class="postform">
 
-        <div class="postform">
+        <div class="post">
             <form method="post" action="" enctype='multipart/form-data'>
 
-                <div class="post">
+                <div>
                     <h4>What is your question?</h4>
 						
                     <div class="inputveld border-bottom">
-                        <input type="text" class="input" name="ask" placeholder="Title" value="">
+                        <input type="text" class="input" name="title" placeholder="Title" value="">
                     </div>
 
                     <div class="inputveld border-bottom wider">
-                        <input type="text" class="input" name="" placeholder="Set description..." id="">
+                        <input type="text" class="input" name="explain" placeholder="Set description..." id="">
                     </div>
 
                     <div class="inputveld">
                         <input type="file" class="input" name="file" value="" multiple="">
                     </div>
-                    
-                    <div class="sbmt-btn">
-					    <input type="submit" id="submitBtn" class="font actBtn" name="submit" value="Post">
-				    </div>
+                </div>    
 
-                </div>
+                <div class="sbmt-btn">
+					 <input type="submit" id="submitBtn" class="font actBtn" name="submit" value="Submit">
+				</div>
+
+               
 
             </form>
         </div>
+        <div class="post-form">
+		<div class="post-box">
+			<form method="post" action="">
+				<?php foreach($posts as $onePost): ?>
+					<article>
+						<h2 class="white-text"><?php echo htmlspecialchars($onePost['title'] ) ?></h2>
+						<p class="white-text"><?php echo htmlspecialchars($onePost['description'] ) ?></p>
+						<div class="post-img">
+							<img
+								class="w-20"
+								src="uploads/<?php echo htmlspecialchars($onePost['image'] ) ?>"
+								alt=""
+							/>
+						</div>
+						<div>
+							<!-- <a herf="" class="like" data-post="1"> ❤️like </a> -->
+							<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
+							<a id="like" data-postid="<?php echo $onePost['id']?>"> ❤️like </a>
+						</div>
+
+						<div>
+							<input type="text" placeholder="What's on your mind?" id="comment" name="comment" />
+							<input id="btnSubmit" type="submit" value="Add comment" />
+			
+		
+						</div>			
+					</article> 
+				<?php ; endforeach; ?>
+			
+			</form>
+		</div>
+	</div>	
 
     </section>
 	
