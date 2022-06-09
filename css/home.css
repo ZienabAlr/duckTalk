@@ -6,6 +6,7 @@ body{
     background: linear-gradient(0deg, rgba(68,23,204,0.8048780487804879) 0%, rgba(105,37,163,0.8807588075880759) 30%, rgba(68,13,204,1) 100%);
     background-repeat: no-repeat;
     background-size: cover; 
+    height: 1000px;
 }
 
 .navbar{
