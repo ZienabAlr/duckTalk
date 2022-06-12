@@ -109,3 +109,36 @@ h4{
     background-color:#37C45B ;
     border-radius: 6px;
 }
+.post-box{
+
+    background-color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+    margin: 50px 0;
+
+}
+
+.post-img{
+    border: 1px solid #a6a6a6 ;
+    background-color: white;
+    padding: 80px;
+
+}
+
+.post-img img{
+
+    width: 250px;
+   max-height: 250px;
+}
+
+.white-text{
+    color: white;
+}
+
+
+
+

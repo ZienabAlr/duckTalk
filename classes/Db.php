@@ -13,7 +13,7 @@ abstract class DB{
         else{
           
            // echo"not";
-            self::$conn = new PDO ("mysql:host=localhost;dbname=ducktalk", "root", "root");
+            self::$conn = new PDO ("mysql:host=localhost;dbname=oop", "root", "root");
             return self:: $conn;
         }
     }

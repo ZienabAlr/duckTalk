@@ -3,7 +3,7 @@
 
 class Post {
 
-    private $title;
+private $title;
 private $description; 
 private $image; 
 
