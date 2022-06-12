@@ -81,7 +81,11 @@ $posts = Post::show_post();
 
             </form>
         </div>
-        <div class="post-form">
+
+    </section>
+	<section>
+
+	<div class="post-form">
 		<div class="post-box">
 			<form method="post" action="">
 				<?php foreach($posts as $onePost): ?>
@@ -98,12 +102,12 @@ $posts = Post::show_post();
 						<div>
 							<!-- <a herf="" class="like" data-post="1"> ❤️like </a> -->
 							<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
-							<a id="like" data-postid="<?php echo $onePost['id']?>"> ❤️like </a>
+							<!-- <a id="like" data-postid="<?php //echo $onePost['id']?>"> ❤️like </a> -->
 						</div>
 
 						<div>
-							<input type="text" placeholder="What's on your mind?" id="comment" name="comment" />
-							<input id="btnSubmit" type="submit" value="Add comment" />
+							<!-- <input type="text" placeholder="What's on your mind?" id="comment" name="comment" /> -->
+							<!-- <input id="btnSubmit" type="submit" value="Add comment" /> -->
 			
 		
 						</div>			
@@ -113,8 +117,7 @@ $posts = Post::show_post();
 			</form>
 		</div>
 	</div>	
-
-    </section>
+	</section>
 	
 </body>
 </html>

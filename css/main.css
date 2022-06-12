@@ -111,6 +111,7 @@ h4{
 }
 .post-box{
 
+    display: inline-block;
     background-color: white;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
