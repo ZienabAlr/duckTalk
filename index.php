@@ -86,12 +86,13 @@ $posts = Post::show_post();
 	<section>
 
 	<div class="post-form">
-		<div class="post-box">
-			<form method="post" action="">
-				<?php foreach($posts as $onePost): ?>
+	
+		<?php foreach($posts as $onePost): ?>
+			<div class="post-box">
+				<form method="post" action="" class= "box">
 					<article>
-						<h2 class="white-text"><?php echo htmlspecialchars($onePost['title'] ) ?></h2>
-						<p class="white-text"><?php echo htmlspecialchars($onePost['description'] ) ?></p>
+						<h2 class="title-text"><?php echo htmlspecialchars($onePost['title'] ) ?></h2>
+						<p class="text"><?php echo htmlspecialchars($onePost['description'] ) ?></p>
 						<div class="post-img">
 							<img
 								class="w-20"
@@ -112,10 +113,9 @@ $posts = Post::show_post();
 		
 						</div>			
 					</article> 
-				<?php ; endforeach; ?>
-			
-			</form>
-		</div>
+				</form>
+			</div>
+		<?php ; endforeach; ?>	
 	</div>	
 	</section>
 	

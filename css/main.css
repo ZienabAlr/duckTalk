@@ -57,9 +57,7 @@ body{
    
     border-bottom:1px solid #dadce0 ;
     width: 300px;
-    /* height: 50px; */
-    /* padding: 20px; */
-  
+   
 }
 
 .inputveld .input{
@@ -109,17 +107,25 @@ h4{
     background-color:#37C45B ;
     border-radius: 6px;
 }
-.post-box{
 
-    display: inline-block;
+.post-form{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.post-box{
+    display: inline;
+    margin: 20px;
     background-color: white;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     width: 400px;
-    border-radius: 8px;
+    border-radius: 23px;
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
-    margin: 50px 0;
+    /* margin: 50px 0; */
 
 }
 
@@ -136,8 +142,15 @@ h4{
    max-height: 250px;
 }
 
-.white-text{
-    color: white;
+.title-text{
+    font-family: "Kohinoor";
+    color: #440DCC;
+}
+
+.text{
+
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 
