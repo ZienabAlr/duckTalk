@@ -1,5 +1,5 @@
 const allstars = document.querySelectorAll('.star'); 
-let current_rating =document.querySelector('.current_rating');
+let current_rating =document.querySelector('.current-rating');
 allstars.forEach((star, i)=>{
 
     star.onclick= function(){
@@ -15,9 +15,11 @@ allstars.forEach((star, i)=>{
                 star.innerHTML ='&#9734';
             }
 
+                
+            e.preventDefault();
         })
 
-    //    e.preventDefault();
+   
     }
 
 })
