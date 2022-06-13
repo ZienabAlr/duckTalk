@@ -86,10 +86,16 @@ $posts = Post::show_post();
         </div>
 
 		<div class="filterList">
-			
 			<span class="material-symbols-rounded star2">filter_list</span>
-
 		</div>
+		<div class="courses ">
+			<div>
+				<h5>Other Courses</h5>
+			</div>
+			<div>
+				<h5>My Courses</h5>
+			</div>
+		</div>	
     </section>
 	<section>
 
@@ -110,8 +116,6 @@ $posts = Post::show_post();
 							</div>
 							<div class="commentStar">
 								<div class="commenticon">
-									<!-- <i class="far fa-comment" style='color: #37C45B; font-size:40px; padding: 20px;' ></i> -->
-									<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
 									<i class="fa fa-comment-o" style="font-size:40px; color: #37C45B;"></i>
 								</div>
 
@@ -138,11 +142,6 @@ $posts = Post::show_post();
 			<?php ; endforeach; ?>	
 		</div>	
 	</section>
-	<!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script> -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="app.js"></script>
 </body>

@@ -29,7 +29,7 @@ body{
 
 .postform{
 
-   margin: 0px 7%;
+   margin: 50px 7%;
    height: 500px;
    display: flex;
    flex-wrap: wrap;
@@ -155,7 +155,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: 20px; 
+    top: 70px; 
    padding: 0 7% 0 100% ;
    
 }
@@ -165,6 +165,55 @@ h3{
     cursor: pointer;
 }
 
+.courses{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 0 0 65%;
+    /* opacity: 0; */
+
+    /* padding: 0 20px 0 300px; */
+}
+
+.courses div{
+
+    display: inline;
+    padding: 0 10px;
+    font-family:'Open Sans', sans-serif ;
+    color: white;
+}
+
+/* .coursAnimation{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 0 0 65%;
+    animation: slide-left 1s ease; 
+}
+
+@keyframes slide-left {
+
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    } 
+    100%{
+
+        opacity: 1;
+        transform: translateX(65%);
+    }
+}
+
+.coursAnimation div{
+
+    display: inline;
+    padding: 0 10px;
+    font-family:'Open Sans', sans-serif ;
+    color: white;
+}
+ */
 
 .material-symbols-rounded {
   font-variation-settings:
@@ -209,7 +258,4 @@ h3{
 
     cursor: pointer;
 }
-
-
-
 
