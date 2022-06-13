@@ -2,7 +2,7 @@ const allstars = document.querySelectorAll('.star');
 let current_rating =document.querySelector('.current-rating');
 allstars.forEach((star, i)=>{
 
-    star.onclick= function(){
+    star.onclick= function(e){
        let current_star_level= i + 1; 
        current_rating.innerText = `${current_star_level} /5`;
         allstars.forEach((star, j)=>{
@@ -24,13 +24,13 @@ allstars.forEach((star, i)=>{
 
 })
 
-document.querySelector('.filterList span').addEventListener('click', function(){
+// document.querySelector('.filterList span').addEventListener('click', function(){
 
-    let courses= document.querySelector('.courses'); 
-    courses.classList.remove(".courses");
-    courses.classList.add("coursAnimation");
-    courses.innerHTML ="";
+//     let courses= document.querySelector('.courses'); 
+//     courses.classList.remove(".courses");
+//     courses.classList.add("coursAnimation");
+//     courses.innerHTML ="";
     
 
     
-})
+// })
