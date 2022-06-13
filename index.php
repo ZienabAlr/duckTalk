@@ -42,8 +42,12 @@ $posts = Post::show_post();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>DuckTalk</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />                                       -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	
+	<title>DuckTalk</title>
 </head>
 <body>
     
@@ -100,17 +104,23 @@ $posts = Post::show_post();
 								alt=""
 							/>
 						</div>
-						<div>
-							<!-- <a herf="" class="like" data-post="1"> ❤️like </a> -->
-							<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
-							<!-- <a id="like" data-postid="<?php //echo $onePost['id']?>"> ❤️like </a> -->
-						</div>
+						<div class="commentStar">
+							<div class="commenticon">
+								<!-- <i class="far fa-comment" style='color: #37C45B; font-size:40px; padding: 20px;' ></i> -->
+								<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
+								<i class="fa fa-comment-o" style="font-size:40px; color: #37C45B;"></i>
+							</div>
 
-						<div>
-							<!-- <input type="text" placeholder="What's on your mind?" id="comment" name="comment" /> -->
-							<!-- <input id="btnSubmit" type="submit" value="Add comment" /> -->
+							<div class="stars">
+								<span class="material-symbols-rounded">grade</span>
+								<span class="material-symbols-rounded">grade</span>
+								<span class="material-symbols-rounded">grade</span>
+								<span class="material-symbols-rounded">grade</span>
+								<span class="material-symbols-rounded">grade</span>
+
+								<!-- <span class="material-symbols-rounded">star</span> -->
 			
-		
+							</div>
 						</div>			
 					</article> 
 				</form>

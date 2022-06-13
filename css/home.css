@@ -6,7 +6,6 @@ body{
     background: linear-gradient(0deg, rgba(68,23,204,0.8048780487804879) 0%, rgba(105,37,163,0.8807588075880759) 30%, rgba(68,13,204,1) 100%);
     background-repeat: no-repeat;
     background-size: cover; 
-    /* height: 400%; */
 }
 
 .navbar{
@@ -36,10 +35,6 @@ body{
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   /* background-color: rgba(255, 255, 255, 0.432); */
-   /* backdrop-filter: blur(8px); */
-   /* border-radius: 25px; */
-   /* border: 0px; */
   
 }
 
@@ -95,6 +90,7 @@ body{
 h4{
     font-family: "Kohinoor";
     color: #440DCC;
+    text-align: center;
 }
 
 #submitBtn{
@@ -144,8 +140,7 @@ h4{
 
 .title-text{
     font-family: "Kohinoor";
-    /* color: #440DCC; */
-    color: #37C45B;
+    color: #440DCC;
 }
 
 .text{
@@ -154,10 +149,39 @@ h4{
 
 }
 
-.fa .fa-comment{
-
-    color: #37C45B;
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color:#EBDC27;
 }
+
+.commentStar{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.commentStar div{
+
+    display: inline;
+   /* padding: 10px 60px; */
+}
+
+.commenticon{
+
+    padding: 0 0 0 10px;
+
+}
+
+.stars{
+
+    padding: 10px 10px 0 200px ;
+}
+
 
 
 
