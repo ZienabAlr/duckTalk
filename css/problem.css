@@ -177,15 +177,20 @@ h4{
 
 }
 
- .stars{
+.stars{
 
-    padding: 10px 10px 0 200px ;
+    padding: 0px 10px 0 200px ;
 } 
 .star{
-    font-size: 3rem;
+    font-size: 1.3rem;
     color: #EBDC27;
     background-color: unset;
     border:none;
+}
+
+.star:hover{
+
+    cursor: pointer;
 }
 
 

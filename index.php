@@ -42,7 +42,7 @@ $posts = Post::show_post();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/problem.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 	
@@ -111,11 +111,17 @@ $posts = Post::show_post();
 								</div>
 
 								<div class="stars">
-									<span class="material-symbols-rounded">grade</span>
-									<span class="material-symbols-rounded">grade</span>
-									<span class="material-symbols-rounded">grade</span>
-									<span class="material-symbols-rounded">grade</span>
-									<span class="material-symbols-rounded">grade</span>
+									<!-- <span class="material-symbols-rounded star1">grade</span>
+									<span class="material-symbols-rounded star2">grade</span>
+									<span class="material-symbols-rounded star3">grade</span>
+									<span class="material-symbols-rounded star4">grade</span>
+									<span class="material-symbols-rounded star5">grade</span> -->
+									<button class="star">&#9734;</button>
+									<button class="star">&#9734;</button>
+									<button class="star">&#9734;</button>
+									<button class="star">&#9734;</button>
+									<button class="star">&#9734;</button>
+									<p class= "current-rating">0/5</p>
 
 									<!-- <span class="material-symbols-rounded">star</span> -->
 				
@@ -127,6 +133,12 @@ $posts = Post::show_post();
 			<?php ; endforeach; ?>	
 		</div>	
 	</section>
+	<!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
