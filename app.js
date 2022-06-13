@@ -16,7 +16,7 @@ allstars.forEach((star, i)=>{
             }
 
                 
-            e.preventDefault();
+            // e.preventDefault();
         })
 
    

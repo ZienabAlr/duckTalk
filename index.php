@@ -61,7 +61,7 @@ $posts = Post::show_post();
             <form method="post" action="" enctype='multipart/form-data'>
 
                 <div>
-                    <h4>What is your question?</h4>
+                    <h3>What is your question?</h3>
 						
                     <div class="inputveld border-bottom">
                         <input type="text" class="input" name="title" placeholder="Title" value="">
@@ -85,6 +85,11 @@ $posts = Post::show_post();
             </form>
         </div>
 
+		<div class="filterList">
+			
+			<span class="material-symbols-rounded star2">filter_list</span>
+
+		</div>
     </section>
 	<section>
 
