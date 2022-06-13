@@ -44,7 +44,6 @@ $posts = Post::show_post();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
-	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />                                       -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 	
 	<title>DuckTalk</title>
@@ -89,45 +88,45 @@ $posts = Post::show_post();
     </section>
 	<section>
 
-	<div class="post-form">
-	
-		<?php foreach($posts as $onePost): ?>
-			<div class="post-box">
-				<form method="post" action="" class= "box">
-					<article>
-						<h2 class="title-text"><?php echo htmlspecialchars($onePost['title'] ) ?></h2>
-						<p class="text"><?php echo htmlspecialchars($onePost['description'] ) ?></p>
-						<div class="post-img">
-							<img
-								class="w-20"
-								src="uploads/<?php echo htmlspecialchars($onePost['image'] ) ?>"
-								alt=""
-							/>
-						</div>
-						<div class="commentStar">
-							<div class="commenticon">
-								<!-- <i class="far fa-comment" style='color: #37C45B; font-size:40px; padding: 20px;' ></i> -->
-								<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
-								<i class="fa fa-comment-o" style="font-size:40px; color: #37C45B;"></i>
+		<div class="post-form">
+		
+			<?php foreach($posts as $onePost): ?>
+				<div class="post-box">
+					<form method="post" action="" class= "box">
+						<article>
+							<h2 class="title-text"><?php echo htmlspecialchars($onePost['title'] ) ?></h2>
+							<p class="text"><?php echo htmlspecialchars($onePost['description'] ) ?></p>
+							<div class="post-img">
+								<img
+									class="w-20"
+									src="uploads/<?php echo htmlspecialchars($onePost['image'] ) ?>"
+									alt=""
+								/>
 							</div>
+							<div class="commentStar">
+								<div class="commenticon">
+									<!-- <i class="far fa-comment" style='color: #37C45B; font-size:40px; padding: 20px;' ></i> -->
+									<!-- <a href="" class="like" data-post="<?php echo $onePost['id']?>"> ❤️like </a> -->
+									<i class="fa fa-comment-o" style="font-size:40px; color: #37C45B;"></i>
+								</div>
 
-							<div class="stars">
-								<span class="material-symbols-rounded">grade</span>
-								<span class="material-symbols-rounded">grade</span>
-								<span class="material-symbols-rounded">grade</span>
-								<span class="material-symbols-rounded">grade</span>
-								<span class="material-symbols-rounded">grade</span>
+								<div class="stars">
+									<span class="material-symbols-rounded">grade</span>
+									<span class="material-symbols-rounded">grade</span>
+									<span class="material-symbols-rounded">grade</span>
+									<span class="material-symbols-rounded">grade</span>
+									<span class="material-symbols-rounded">grade</span>
 
-								<!-- <span class="material-symbols-rounded">star</span> -->
-			
-							</div>
-						</div>			
-					</article> 
-				</form>
-			</div>
-		<?php ; endforeach; ?>	
-	</div>	
+									<!-- <span class="material-symbols-rounded">star</span> -->
+				
+								</div>
+							</div>			
+						</article> 
+					</form>
+				</div>
+			<?php ; endforeach; ?>	
+		</div>	
 	</section>
-	
+	<script src="app.js"></script>
 </body>
 </html>
