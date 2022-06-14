@@ -12,7 +12,7 @@
           <div class="dropdown-content"> 
             <a href="#">Profile</a>
             <a href="#">Setting</a>
-            <a href="#">Log Out</a>
+            <a href="logout.php">Log Out</a>
           </div>
         </div>  
     </div>
