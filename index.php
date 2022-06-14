@@ -51,12 +51,8 @@ $posts = Post::show_post();
 <body>
     
     <header>
-		<?php include_once("inc/nav.inc.php"); ?>
-		<div class="search-bar">
-                <input type="text" placeholder="Search.." name="Search">
-                <button type="submit"><span class="material-symbols-rounded">search</span></button>
-        </div>
-
+<?php include_once("inc/nav.inc.php"); ?>
+	
 	</header>	
 
     <section class="postform">

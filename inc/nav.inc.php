@@ -18,5 +18,9 @@
           </div>
         </div>  
     </div>
+    <div class="search-bar">
+                <input type="text" placeholder="Search.." name="Search">
+                <button type="submit"><span class="material-symbols-rounded">search</span></button>
+        </div>
   
 </nav>
