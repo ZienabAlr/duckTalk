@@ -23,14 +23,3 @@ allstars.forEach((star, i)=>{
     }
 
 })
-
-// document.querySelector('.filterList span').addEventListener('click', function(){
-
-//     let courses= document.querySelector('.courses'); 
-//     courses.classList.remove(".courses");
-//     courses.classList.add("coursAnimation");
-//     courses.innerHTML ="";
-    
-
-    
-// })

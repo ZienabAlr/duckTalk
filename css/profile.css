@@ -263,36 +263,39 @@ body {
     cursor: pointer;
 }
 .search-bar input{
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-}
-.search-bar button img{
-width: 27px;
-}
-.search-bar button {
- position: absolute;
- right: 30px;
- top: 105px;
- border: 0;
- border-radius: 0;
- width: 27px;
- height: 27px;
- background: transparent;
- cursor: pointer;
+    float: right;
+    padding: 8px 15px;
+    /* margin-top: 8px;
+    margin-right: 16px; */
+    margin: 3% 5%;
+    border: none;
+    /* font-size: 17px; */
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
 }
 
-.profile img{
+.search-bar button span{
+  /* width: 27px; */
+  color: white;
+}
+.search-bar button {
+   position: absolute;
+   right: 30px;
+   top: 90px;
+   border: 0;
+   border-radius: 0;
+   width: 27px;
+   height: 27px;
+   background: transparent;
+   cursor: pointer;
+}
+
+
+.profile .material-symbols-rounded{
     
-    width: 50px;
-    /* float: right; */
-    /* margin: 0 ;  */
+    font-size: 50px;
+
 }
 
 .dropdown {

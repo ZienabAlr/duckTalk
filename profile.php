@@ -16,16 +16,10 @@
     <header id="head1">
 
 		<?php include_once("inc/nav.inc.php"); ?>
-        <!-- <nav class="navigation">
-            <a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
-            <div class="loginSign">
-                <a class="notActiv font" href="login.php">Login</a>
-                <a class="activeBtn font " href="signup.php">Sign Up</a>
-            </div> -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search anything.." name="Search">
-                <button type="submit"><img src="Icons/search1.png" alt="search"></button>
-            </div>
+        <div class="search-bar">
+                <input type="text" placeholder="Search.." name="Search">
+                <button type="submit"><span class="material-symbols-rounded">search</span></button>
+        </div>
         <!-- </nav> -->
     </header>
 <div class="container-profile">

@@ -12,18 +12,57 @@ body{
 
     background-color: white;
     height: 80px;
+
 }
 
 .logo img{
-
     width: 200px;
     padding: 1.3em ;
 }
 
-.profile img{
+.profile .material-symbols-rounded{
     
-    width: 50px;
-   
+   font-size: 50px;
+   color: #440DCC;
+}
+.search-bar input{
+    /* float: right;
+    padding: 8px 15px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 1% 7% 1% 80%;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px); */
+    float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+.search-bar button span{
+  /* width: 27px; */
+  color: white;
+}
+
+.search-bar button {
+   position: absolute;
+   right: 30px;
+   top: 95px;
+   border: 0;
+   border-radius: 0;
+   width: 27px;
+   height: 27px;
+   background: transparent;
+   cursor: pointer;
+  
 }
 
 .postform{
@@ -248,7 +287,6 @@ h3{
     color: #440DCC;
     text-align: center;
     font-family:'Open Sans', sans-serif; 
-    /* font-family: "Kohinoor"; */
     padding: 12px 16px;
     border-radius: 10px;
     text-decoration: none;
