@@ -1,0 +1,290 @@
+@import url(//db.onlinewebfonts.com/c/1f18a828748b3090f287def14b600d51?family=Kohinoor);
+
+nav{
+    background-color: white;
+    height: 80px;
+}
+
+.logo img{
+    width: 200px;
+    padding: 1.3em ;
+}
+
+.loginSign{
+    display: inline;
+    float: right;
+    margin: 1.8em;
+    position: relative;
+}
+
+.loginSign a{
+    text-decoration: none;
+    padding:15px 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.loginSign .notActiv{
+    border: #2eaa4d solid 2px;
+}
+
+.loginSign .activeBtn{
+    background-color: #440DCC;
+    color: white;
+}
+
+body {
+  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(68,23,204,0.8048780487804879) 0%, rgba(105,37,163,0.8807588075880759) 30%, rgba(68,13,204,1) 100%);    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+  
+#signupForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.form {
+    background-color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+  
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: "Kohinoor";
+    text-align: center;
+    color: #440DCC;
+}
+  
+#inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+  
+  
+.warning p {
+    color: red;
+}
+  
+  
+#inputContainer .login{
+    text-align: right;
+    font-size: 13px;
+}
+  
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #dadce0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background: none;
+    z-index: 1;
+    color: white;
+}
+.input:focus{
+  outline: none;
+}
+  
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: #dadce0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+  
+  ::placeholder {
+    color: transparent;
+  }
+  .buttons {
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    display: flex;
+  }
+  .BackBtn{
+    width: 100px;
+    height: 40px;
+    background-color: transparent; 
+    border:  1px #440DCC solid; 
+    color: #440DCC;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+  .SignUpBtn{
+    width: 100px;
+    height: 40px;
+    background-color:  #2eaa4d; 
+    border:  1px  #2eaa4d solid; 
+    color: white;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .input:not(:placeholder-shown) + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /*.input:focus {
+    border: 2px solid purple;
+  }*/
+  
+  #noAccount h4{
+    text-align: center;
+  }
+
+  .container-profile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-box{
+    width: 1034px;
+    height: 770px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 34px;
+    text-align: center;
+    position: relative;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    overflow: hidden;
+    /*margin: Top Right Bottom Left */
+    margin: 40px auto;
+    border: 3px solid #37C45B;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .edit-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+  }
+
+  .email {
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+  .rating {
+    margin-top: 16px;
+  }
+
+  .rating svg {
+    fill: #FFE200;
+  }
+
+  .count-rating {
+    font-size: 20px;
+  }
+
+  .bio {
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+  .followers {
+    display: flex;
+    width: 400px;
+    height: 70px;
+    margin: 50px auto;
+  }
+
+  .count-followers {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+  }
+
+  .count-followers span:first-child {
+    color: #440DCC;
+  }
+  .filter-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 130px;
+    bottom: 95px;
+    cursor: pointer;
+}
+.search-bar input{
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+.search-bar button img{
+width: 27px;
+}
+.search-bar button {
+ position: absolute;
+ right: 30px;
+ top: 105px;
+ border: 0;
+ border-radius: 0;
+ width: 27px;
+ height: 27px;
+ background: transparent;
+ cursor: pointer;
+}
+
